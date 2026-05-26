@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import ScrollReveal from '@/components/ScrollReveal';
 import SectionRule from '@/components/SectionRule';
@@ -7,6 +8,11 @@ import ClosingCTA from '@/components/ClosingCTA';
 import PageHero from '@/components/PageHero';
 import Accordion from '@/components/Accordion';
 import { siteInfo } from '@/lib/site-data';
+
+export const metadata: Metadata = {
+  title: 'New Patients — Maverick Chiropractic',
+  description: 'What to expect on your first visit. A calm, conversational 40-minute appointment with Dr. Courtney in Windsor, Colorado.',
+};
 
 const faqItems = [
   { id: 'faq1', question: 'Is chiropractic care safe for babies and children?', answer: 'Yes. Pediatric care uses very gentle, age-appropriate techniques designed specifically for smaller bodies, always adjusted to the child\'s comfort and needs.' },

@@ -109,7 +109,7 @@ export default function AboutPage() {
             <div className="doc-image-wrap">
               <div className="doc-image">
                 <img
-                  src="mpl5zedr-B3F2C9DB-93D7-4C80-B46F-01CE2F2A41C9.PNG"
+                  src="/images/dr-courtney.png"
                   alt="Dr. Courtney Schneider, DC"
                 />
               </div>

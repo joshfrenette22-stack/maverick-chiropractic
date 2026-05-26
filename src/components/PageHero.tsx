@@ -9,7 +9,6 @@ export default function PageHero({ eyebrow, headline, subtitle, backgroundImage 
   return (
     <section className="page-hero">
       <div className="page-hero-bg" style={{ backgroundImage: `url('${backgroundImage}')` }} />
-      <div className="page-hero-overlay" />
       <div className="page-hero-content">
         <ScrollReveal><p className="eyebrow">{eyebrow}</p></ScrollReveal>
         <ScrollReveal delay={1}><h1>{headline}</h1></ScrollReveal>
