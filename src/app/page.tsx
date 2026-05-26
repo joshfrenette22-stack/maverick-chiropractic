@@ -16,10 +16,10 @@ const services = [
 ];
 
 const concerns = [
-  { label: 'Pediatric', sub: 'Newborns through age 12', href: '/services', img: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&fit=crop&q=80', alt: 'Happy baby' },
-  { label: 'Pregnancy', sub: 'Webster-certified prenatal care', href: '/services', img: 'https://images.unsplash.com/photo-1493894473891-10fc1e5dbd22?w=600&fit=crop&q=80', alt: 'Pregnant woman in natural light' },
-  { label: 'Postpartum', sub: 'Recovery for new moms', href: '/services', img: 'https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?w=600&fit=crop&q=80', alt: 'Mother holding baby' },
-  { label: 'Adults & Family', sub: 'Headaches, back pain, daily tension', href: '/services', img: 'https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?w=600&fit=crop&q=80', alt: 'Family together outdoors' },
+  { label: 'Pediatric', sub: 'Newborns through age 12', href: '/services', img: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&fit=crop&q=80', alt: 'Happy baby', shape: 'concern-shape-circle' },
+  { label: 'Pregnancy', sub: 'Webster-certified prenatal care', href: '/services', img: 'https://images.unsplash.com/photo-1493894473891-10fc1e5dbd22?w=600&fit=crop&q=80', alt: 'Pregnant woman in natural light', shape: 'concern-shape-leaf' },
+  { label: 'Postpartum', sub: 'Recovery for new moms', href: '/services', img: 'https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?w=600&fit=crop&q=80', alt: 'Mother holding baby', shape: 'concern-shape-soft' },
+  { label: 'Adults & Family', sub: 'Headaches, back pain, daily tension', href: '/services', img: 'https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?w=600&fit=crop&q=80', alt: 'Family together outdoors', shape: 'concern-shape-asym' },
 ];
 
 const faqItems = [
@@ -214,7 +214,7 @@ export default function Home() {
           {concerns.map((c, i) => (
             <ScrollReveal key={c.label} variant="reveal" delay={i as 0|1|2|3}>
               <Link href={c.href} className="concern-card">
-                <div className="concern-img">
+                <div className={`concern-img ${c.shape}`}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={c.img} alt={c.alt} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
