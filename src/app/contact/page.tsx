@@ -101,8 +101,8 @@ export default function ContactPage() {
               <div className="contact-info-panel">
                 <div className="contact-info-image">
                   <img
-                    src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1200&q=80"
-                    alt="Family at golden hour in Windsor Colorado"
+                    src="https://images.unsplash.com/photo-1513128034602-7814ccaddd4e?w=1200&q=80"
+                    alt="Bright modern wellness space interior"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
                 </div>

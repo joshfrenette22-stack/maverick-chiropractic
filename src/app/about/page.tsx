@@ -39,8 +39,8 @@ export default function AboutPage() {
           <ScrollReveal variant="reveal-left" as="div">
             <div className="story-image">
               <img
-                src="https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?w=1200&q=80"
-                alt="Family outdoors together in Colorado"
+                src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=1200&q=80"
+                alt="Happy family enjoying time together in the park"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
             </div>
@@ -229,8 +229,8 @@ export default function AboutPage() {
         <div className="mosaic-grid">
           <ScrollReveal variant="reveal-left" as="div" className=" mosaic-item mosaic-item-1">
             <img
-              src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80"
-              alt="Modern chiropractic clinic interior"
+              src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1200&q=80"
+              alt="Sunny meadow with warm natural light"
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </ScrollReveal>

@@ -20,7 +20,7 @@ export default function JournalPage() {
         eyebrow="The Journal"
         headline="Reading for growing families."
         subtitle="Education, insights, and gentle guidance from Dr. Courtney."
-        backgroundImage="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1200&q=80"
+        backgroundImage="https://images.unsplash.com/photo-1470116945706-e6bf5d5a53ca?w=1200&q=80"
       />
 
       {/* Featured Article */}
@@ -28,7 +28,7 @@ export default function JournalPage() {
         <div className="featured-card">
           <ScrollReveal variant="reveal-left" className="featured-card-image">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?w=1200&q=80" alt="Family enjoying time outdoors together" />
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=80" alt="Happy family laughing together outdoors" />
           </ScrollReveal>
           <ScrollReveal variant="reveal-right" className="featured-card-text">
             <span className="featured-tag">Featured</span>

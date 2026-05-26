@@ -21,7 +21,7 @@ export default function ServicesPage() {
         eyebrow="Our Care"
         headline="The Menu"
         subtitle="Our philosophy is centered on root cause care — unhurried, educational, and personalized to your family."
-        backgroundImage="https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?w=1200&q=80"
+        backgroundImage="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1200&q=80"
       />
 
       {/* 1. Pediatric Chiropractic — image left, arch-topped */}
@@ -246,8 +246,8 @@ export default function ServicesPage() {
           <ScrollReveal variant="reveal-right" className="service-image">
             <div className="img-asymmetric">
               <img
-                src="https://images.unsplash.com/photo-1544126592-807ade215a0b?w=1200&q=80"
-                alt="Mother in an intimate moment with her newborn"
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=80"
+                alt="Active wellness and fitness lifestyle"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
             </div>
