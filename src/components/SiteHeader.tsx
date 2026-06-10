@@ -29,7 +29,7 @@ export default function SiteHeader() {
       <header className={headerClass} id="siteHeader">
         <div className="header-inner">
           <nav className="nav-left">
-            {navLinks.map(link => (
+            {navLinks.slice(0, 2).map(link => (
               <Link key={link.href} href={link.href} className={pathname === link.href ? 'active' : ''}>
                 {link.label}
               </Link>
@@ -41,6 +41,11 @@ export default function SiteHeader() {
             <span className="logo-line"></span>
           </Link>
           <div className="nav-right">
+            {navLinks.slice(2).map(link => (
+              <Link key={link.href} href={link.href} className={pathname === link.href ? 'active' : ''}>
+                {link.label}
+              </Link>
+            ))}
             <Link href={siteInfo.bookingUrl} className="btn btn-primary">Book Now</Link>
           </div>
           <button
