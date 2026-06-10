@@ -496,8 +496,8 @@ ul, ol { list-style: none; }
    SERVICES PAGE: SERVICE SECTIONS
    ======================================================================== */
 .service-section { padding: var(--section-py) 0; overflow: hidden; }
-.service-section:nth-child(odd) { background: var(--color-cream); }
-.service-section:nth-child(even) { background: var(--color-white); }
+.service-section-cream { background: var(--color-cream); }
+.service-section-white { background: var(--color-white); }
 .service-split { display: grid; grid-template-columns: 7fr 5fr; gap: 64px; max-width: var(--container); margin: 0 auto; padding: 0 var(--pad); align-items: center; }
 .service-split.reverse { grid-template-columns: 5fr 7fr; }
 .service-split.reverse .service-image { order: 2; }

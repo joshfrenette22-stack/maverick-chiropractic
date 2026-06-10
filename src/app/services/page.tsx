@@ -25,7 +25,7 @@ export default function ServicesPage() {
       />
 
       {/* 1. Pediatric Chiropractic — image left, arch-topped */}
-      <section className="service-section">
+      <section className="service-section service-section-cream">
         <div className="service-split">
           <ScrollReveal variant="reveal-left" className="service-image">
             <div className="img-arch">
@@ -69,7 +69,7 @@ export default function ServicesPage() {
       />
 
       {/* 2. Prenatal & Webster — image right, leaf shape */}
-      <section className="service-section">
+      <section className="service-section service-section-white">
         <div className="service-split reverse">
           <ScrollReveal variant="reveal-right" className="service-image">
             <div className="img-leaf">
@@ -113,7 +113,7 @@ export default function ServicesPage() {
       />
 
       {/* 3. Postpartum Recovery — image left, asymmetric arch */}
-      <section className="service-section">
+      <section className="service-section service-section-cream">
         <div className="service-split">
           <ScrollReveal variant="reveal-left" className="service-image">
             <div className="img-asymmetric">
@@ -157,7 +157,7 @@ export default function ServicesPage() {
       />
 
       {/* 4. Family Adjustments — image right, arch-topped */}
-      <section className="service-section">
+      <section className="service-section service-section-white">
         <div className="service-split reverse">
           <ScrollReveal variant="reveal-right" className="service-image">
             <div className="img-arch">
@@ -200,7 +200,7 @@ export default function ServicesPage() {
       />
 
       {/* 5. First-Visit Experience — image left, leaf shape */}
-      <section className="service-section">
+      <section className="service-section service-section-cream">
         <div className="service-split">
           <ScrollReveal variant="reveal-left" className="service-image">
             <div className="img-leaf">
@@ -241,7 +241,7 @@ export default function ServicesPage() {
       />
 
       {/* 6. Wellness Plans — image right, asymmetric arch */}
-      <section className="service-section">
+      <section className="service-section service-section-white">
         <div className="service-split reverse">
           <ScrollReveal variant="reveal-right" className="service-image">
             <div className="img-asymmetric">
