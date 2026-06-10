@@ -40,8 +40,8 @@ const articles = [
     meta: '3 Min Read \u00b7 Mar 2026',
     title: 'Your First Visit: What to Expect at Maverick',
     excerpt: 'No surprises, no pressure. Here\u2019s exactly what happens from the moment you walk through the door to the moment you leave feeling better.',
-    img: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&fit=crop&q=80',
-    alt: 'Woman in a calm yoga and meditation pose',
+    img: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&fit=crop&q=80',
+    alt: 'Welcoming conversation at a first appointment',
     delay: 2 as const,
   },
   {
