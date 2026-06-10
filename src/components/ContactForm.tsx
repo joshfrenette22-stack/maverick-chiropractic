@@ -3,7 +3,7 @@
 import { useState, useRef } from 'react';
 
 export default function ContactForm() {
-  const [formState, setFormState] = useState<'idle' | 'submitting' | 'success'>('idle');
+  const [formState, setFormState] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [errors, setErrors] = useState<Record<string, boolean>>({});
   const [focused, setFocused] = useState<Record<string, boolean>>({});
   const [filled, setFilled] = useState<Record<string, boolean>>({});
@@ -32,7 +32,7 @@ export default function ContactForm() {
     return classes.join(' ');
   }
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = formRef.current;
     if (!form) return;
@@ -71,10 +71,25 @@ export default function ContactForm() {
 
     setFormState('submitting');
 
-    // Simulate submission
-    setTimeout(() => {
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          firstName: data.get('firstName'),
+          lastName: data.get('lastName'),
+          email: data.get('email'),
+          phone: data.get('phone'),
+          subject: data.get('subject'),
+          message: data.get('message'),
+        }),
+      });
+
+      if (!res.ok) throw new Error('Send failed');
       setFormState('success');
-    }, 600);
+    } catch {
+      setFormState('error');
+    }
   }
 
   if (formState === 'success') {
@@ -82,6 +97,16 @@ export default function ContactForm() {
       <div className="form-success show">
         <h3>Message sent.</h3>
         <p>Thank you for reaching out. We&rsquo;ll get back to you within 24 hours.</p>
+      </div>
+    );
+  }
+
+  if (formState === 'error') {
+    return (
+      <div className="form-success show">
+        <h3>Something went wrong.</h3>
+        <p>Please try again, or email us directly at courtney@maverickchiropracticcare.com</p>
+        <button className="btn btn-ghost" style={{ marginTop: 16 }} onClick={() => setFormState('idle')}>Try Again</button>
       </div>
     );
   }
