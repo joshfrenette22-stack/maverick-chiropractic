@@ -9,18 +9,12 @@ import { siteInfo } from '@/lib/site-data';
 const services = [
   { title: 'Pediatric Chiropractic', desc: 'Gentle, age-appropriate care for newborns through age 12.', href: '/services', img: '/images/pediatric-chiropractic-adjustment.webp', alt: 'Chiropractor gently adjusting a baby' },
   { title: 'Prenatal & Webster', desc: 'Webster-certified care to support pelvic balance and ease pregnancy discomfort.', href: '/services', img: '/images/prenatal-chiropractic-consultation.webp', alt: 'Chiropractor consulting with a pregnant patient' },
-  { title: 'Postpartum Care', desc: 'Helping mothers recover from the physical changes of birth.', href: '/services', img: 'https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?w=800&fit=crop&q=80', alt: 'Mother holding baby close' },
+  { title: 'Postpartum Care', desc: 'Helping mothers recover from the physical changes of birth.', href: '/services', img: '/images/postpartum-chiropractic-adjustment.webp', alt: 'Dr. Courtney adjusting a postpartum mom while her newborn rests nearby' },
   { title: 'Family Adjustments', desc: 'Care for adults addressing headaches, neck and back pain, and everyday tension.', href: '/services', img: '/images/chiropractic-spinal-adjustment.webp', alt: 'Chiropractor performing a spinal adjustment on an adult patient' },
   { title: 'Soft Tissue Therapies', desc: 'Dry Needling, RockBlades, cupping, and kinesiology taping.', href: '/services', img: '/images/dry-needling-therapy.webp', alt: 'Close-up of dry needling therapy with gloved hands placing needles' },
   { title: 'New Patient Visit', desc: 'A 40-minute first visit — consultation, exam, and a clear plan.', href: '/new-patients', img: '/images/front-desk-patient-checkin.webp', alt: 'Patient being greeted at the front desk during check-in' },
 ];
 
-const concerns = [
-  { label: 'Pediatric', sub: 'Newborns through age 12', href: '/services', img: '/images/pediatric-chiropractic-adjustment.webp', alt: 'Chiropractor gently adjusting a baby', shape: 'concern-shape-circle' },
-  { label: 'Pregnancy', sub: 'Webster-certified prenatal care', href: '/services', img: '/images/prenatal-chiropractic-consultation.webp', alt: 'Chiropractor consulting with a pregnant patient', shape: 'concern-shape-leaf' },
-  { label: 'Postpartum', sub: 'Recovery for new moms', href: '/services', img: 'https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?w=600&fit=crop&q=80', alt: 'Mother holding baby', shape: 'concern-shape-soft' },
-  { label: 'Adults & Family', sub: 'Headaches, back pain, daily tension', href: '/services', img: '/images/chiropractic-spinal-adjustment.webp', alt: 'Chiropractor performing a spinal adjustment on an adult patient', shape: 'concern-shape-asym' },
-];
 
 const faqItems = [
   { id: 'faq1', question: 'Is chiropractic care safe for babies and children?', answer: 'Yes. Pediatric care uses very gentle, age-appropriate techniques designed specifically for smaller bodies, always adjusted to the child\'s comfort and needs.' },
@@ -197,37 +191,6 @@ export default function Home() {
           </ScrollReveal>
         </div>
       </section>
-
-      {/* Divider: white → cream */}
-      <SectionDivider variant="ellipse" fromBg="var(--color-white)" toBg="var(--color-cream)" />
-
-      {/* Concerns / Who We Serve */}
-      <section className="concerns">
-        <div className="container">
-          <div className="concerns-header">
-            <ScrollReveal><SectionRule text="Who We Serve" /></ScrollReveal>
-            <ScrollReveal as="h2" variant="reveal" delay={1}>Care for every season of life.</ScrollReveal>
-            <ScrollReveal as="p" variant="reveal" delay={2}>Find the chapter you&rsquo;re in — we&rsquo;ll show you what care looks like there.</ScrollReveal>
-          </div>
-        </div>
-        <div className="concerns-grid">
-          {concerns.map((c, i) => (
-            <ScrollReveal key={c.label} variant="reveal" delay={i as 0|1|2|3}>
-              <Link href={c.href} className="concern-card">
-                <div className={`concern-img ${c.shape}`}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={c.img} alt={c.alt} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                </div>
-                <span className="concern-label">{c.label}</span>
-                <span className="concern-sub">{c.sub}</span>
-              </Link>
-            </ScrollReveal>
-          ))}
-        </div>
-      </section>
-
-      {/* Divider: cream → white */}
-      <SectionDivider variant="gentle" fromBg="var(--color-cream)" toBg="var(--color-white)" />
 
       {/* Founder */}
       <section className="founder" id="dr-courtney">
