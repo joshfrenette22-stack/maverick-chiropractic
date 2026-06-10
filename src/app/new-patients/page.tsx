@@ -59,7 +59,7 @@ export default function NewPatients() {
             </div>
             <div className="timeline-dot">1</div>
             <ScrollReveal variant="reveal-scale" as="div" className=" timeline-img">
-              <img src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=1200&q=80" alt="Mother and daughter sharing a warm moment together" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src="/images/front-desk-patient-checkin.webp" alt="Patient greeted warmly at the clinic front desk" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </ScrollReveal>
           </ScrollReveal>
 
@@ -70,7 +70,7 @@ export default function NewPatients() {
             </div>
             <div className="timeline-dot">2</div>
             <ScrollReveal variant="reveal-scale" as="div" className=" timeline-img">
-              <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=1200&q=80" alt="Parents lovingly caring for their newborn in the nursery" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src="/images/chiropractic-treatment-room.webp" alt="Maverick Chiropractic treatment room ready for an assessment" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </ScrollReveal>
           </ScrollReveal>
 
@@ -178,22 +178,50 @@ export default function NewPatients() {
       {/* Divider: cream -> white */}
       <SectionDivider variant="ellipse" fromBg="var(--color-cream)" toBg="var(--color-white)" />
 
-      {/* Testimonial Spotlight */}
+      {/* Testimonials */}
       <section className="testimonial-spotlight">
         <div className="testimonial-spotlight-inner">
-          <ScrollReveal variant="reveal-scale">
-            <div className="spotlight-img">
-              <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=1200&q=80" alt="Mother bonding with her baby" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-            </div>
-          </ScrollReveal>
           <ScrollReveal>
-            <div className="spotlight-stars">&starf; &starf; &starf; &starf; &starf;</div>
+            <div className="spotlight-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
           </ScrollReveal>
           <ScrollReveal delay={1}>
             <blockquote>&ldquo;I was nervous about my first visit, but Dr. Courtney made me feel completely at ease. She explained everything, never rushed, and genuinely listened. I left feeling better than I have in years.&rdquo;</blockquote>
           </ScrollReveal>
           <ScrollReveal delay={2}>
-            <cite>&mdash; Amanda R., Windsor</cite>
+            <cite>&mdash; Jordan Frenette, Windsor</cite>
+          </ScrollReveal>
+        </div>
+        <div className="testimonial-spotlight-inner">
+          <ScrollReveal>
+            <div className="spotlight-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+          </ScrollReveal>
+          <ScrollReveal delay={1}>
+            <blockquote>&ldquo;Dr. Courtney is amazing with my kids. They actually look forward to their appointments. She&rsquo;s gentle, patient, and takes the time to explain everything to both me and them.&rdquo;</blockquote>
+          </ScrollReveal>
+          <ScrollReveal delay={2}>
+            <cite>&mdash; Courtney Sisk, Windsor</cite>
+          </ScrollReveal>
+        </div>
+        <div className="testimonial-spotlight-inner">
+          <ScrollReveal>
+            <div className="spotlight-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+          </ScrollReveal>
+          <ScrollReveal delay={1}>
+            <blockquote>&ldquo;I started prenatal care at Maverick during my second trimester and it made such a difference. Less back pain, better sleep, and I felt so much more prepared heading into delivery.&rdquo;</blockquote>
+          </ScrollReveal>
+          <ScrollReveal delay={2}>
+            <cite>&mdash; Hannah Egger, Timnath</cite>
+          </ScrollReveal>
+        </div>
+        <div className="testimonial-spotlight-inner">
+          <ScrollReveal>
+            <div className="spotlight-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+          </ScrollReveal>
+          <ScrollReveal delay={1}>
+            <blockquote>&ldquo;I&rsquo;d never been to a chiropractor before and didn&rsquo;t know what to expect. Dr. Courtney walked me through everything step by step. No pressure, no upselling — just honest, thoughtful care.&rdquo;</blockquote>
+          </ScrollReveal>
+          <ScrollReveal delay={2}>
+            <cite>&mdash; Tim Coleman, Fort Collins</cite>
           </ScrollReveal>
         </div>
       </section>

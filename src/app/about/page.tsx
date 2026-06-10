@@ -39,8 +39,8 @@ export default function AboutPage() {
           <ScrollReveal variant="reveal-left" as="div">
             <div className="story-image">
               <img
-                src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=1200&q=80"
-                alt="Happy family enjoying time together in the park"
+                src="/images/postpartum-chiropractic-adjustment.webp"
+                alt="Dr. Courtney adjusting a postpartum mom while her newborn rests nearby"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
             </div>

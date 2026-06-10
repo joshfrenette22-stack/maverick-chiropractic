@@ -118,8 +118,8 @@ export default function ServicesPage() {
           <ScrollReveal variant="reveal-left" className="service-image">
             <div className="img-asymmetric">
               <img
-                src="https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?w=1200&q=80"
-                alt="Mother tenderly holding her newborn baby"
+                src="/images/postpartum-chiropractic-adjustment.webp"
+                alt="Dr. Courtney adjusting a postpartum mom while her newborn rests nearby"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
             </div>

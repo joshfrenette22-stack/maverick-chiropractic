@@ -78,7 +78,7 @@ export default function Home() {
         <ScrollReveal variant="reveal-scale" className="arch-break-inner">
           <div className="arch-break-img">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?w=1200&fit=crop&q=80" alt="Family walking together outdoors" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src="/images/postpartum-chiropractic-adjustment.webp" alt="Dr. Courtney adjusting a postpartum mom while her newborn rests nearby" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <svg className="arch-badge" viewBox="0 0 140 140">
             <defs>

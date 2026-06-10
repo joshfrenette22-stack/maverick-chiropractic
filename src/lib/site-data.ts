@@ -19,7 +19,7 @@ export const siteInfo = {
   instagram: '@maverick.chiropractic',
   instagramUrl: 'https://www.instagram.com/maverick.chiropractic',
   bookingUrl: '#book',
-  directionsUrl: '#directions',
+  directionsUrl: 'https://www.google.com/maps/place/1226+W+Ash+St+Unit+A,+Windsor,+CO+80550',
 };
 
 export const hours = [

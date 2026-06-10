@@ -136,8 +136,17 @@ export default function ContactPage() {
       <section className="map-section">
         <div className="container">
           <ScrollReveal variant="reveal-scale">
-            <div className="map-placeholder">
-              <span>Interactive Map</span>
+            <div className="map-embed">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.5!2d-104.9134!3d40.4772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876ea1c0a1b5b5b5%3A0x0!2s1226+W+Ash+St+Unit+A%2C+Windsor%2C+CO+80550!5e0!3m2!1sen!2sus!4v1700000000000"
+                width="100%"
+                height="400"
+                style={{ border: 0, borderRadius: 16 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Maverick Chiropractic location — 1226 W Ash St, Unit A, Windsor, CO 80550"
+              />
             </div>
           </ScrollReveal>
           <ScrollReveal>
