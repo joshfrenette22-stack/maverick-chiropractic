@@ -266,7 +266,7 @@ export default function Home() {
       </section>
 
       {/* Divider: cream → moss */}
-      <SectionDivider variant="organic" fromBg="var(--color-white)" toBg="var(--color-moss)" />
+      <SectionDivider variant="organic" fromBg="var(--color-cream)" toBg="var(--color-moss)" />
 
       {/* Closing CTA */}
       <ClosingCTA
