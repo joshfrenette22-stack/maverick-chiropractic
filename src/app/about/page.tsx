@@ -229,15 +229,15 @@ export default function AboutPage() {
         <div className="mosaic-grid">
           <ScrollReveal variant="reveal-left" as="div" className=" mosaic-item mosaic-item-1">
             <img
-              src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1200&q=80"
-              alt="Sunny meadow with warm natural light"
+              src="/images/chiropractic-treatment-room.webp"
+              alt="Maverick Chiropractic treatment room interior"
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </ScrollReveal>
           <ScrollReveal delay={1} as="div" className=" mosaic-item mosaic-item-2">
             <img
-              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200&q=80"
-              alt="Bright modern office interior"
+              src="/images/front-desk-patient-checkin.webp"
+              alt="Patient being greeted at the clinic front desk"
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </ScrollReveal>

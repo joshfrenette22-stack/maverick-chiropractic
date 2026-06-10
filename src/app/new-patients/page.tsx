@@ -31,7 +31,7 @@ export default function NewPatients() {
         eyebrow="New Patients"
         headline="Your first visit is a conversation."
         subtitle="No surprises. No pressure. Just thoughtful care, at your pace."
-        backgroundImage="https://images.unsplash.com/photo-1474377207190-a7d8b3334068?w=1200&q=80"
+        backgroundImage="/images/front-desk-patient-checkin.webp"
       />
 
       {/* What to Expect Intro */}
@@ -81,7 +81,7 @@ export default function NewPatients() {
             </div>
             <div className="timeline-dot">3</div>
             <ScrollReveal variant="reveal-scale" as="div" className=" timeline-img">
-              <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=1200&q=80" alt="Gentle caring hands in a wellness setting" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src="/images/chiropractic-spinal-adjustment.webp" alt="Chiropractor performing a hands-on spinal adjustment" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </ScrollReveal>
           </ScrollReveal>
         </div>
@@ -96,7 +96,7 @@ export default function NewPatients() {
           <div className="faq-image">
             <ScrollReveal variant="reveal-rotate">
               <div className="faq-img-shape">
-                <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=1200&q=80" alt="Pregnant woman enjoying the outdoors" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src="/images/prenatal-chiropractic-consultation.webp" alt="Chiropractor consulting with a pregnant patient" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
             </ScrollReveal>
           </div>

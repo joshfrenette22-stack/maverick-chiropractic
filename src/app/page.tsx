@@ -7,19 +7,19 @@ import HomepageAccordion from '@/components/HomepageAccordion';
 import { siteInfo } from '@/lib/site-data';
 
 const services = [
-  { title: 'Pediatric Chiropractic', desc: 'Gentle, age-appropriate care for newborns through age 12.', href: '/services', img: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?w=800&fit=crop&q=80', alt: 'Happy baby smiling' },
-  { title: 'Prenatal & Webster', desc: 'Webster-certified care to support pelvic balance and ease pregnancy discomfort.', href: '/services', img: 'https://images.unsplash.com/photo-1493894473891-10fc1e5dbd22?w=800&fit=crop&q=80', alt: 'Pregnant woman in natural light' },
+  { title: 'Pediatric Chiropractic', desc: 'Gentle, age-appropriate care for newborns through age 12.', href: '/services', img: '/images/pediatric-chiropractic-adjustment.webp', alt: 'Chiropractor gently adjusting a baby' },
+  { title: 'Prenatal & Webster', desc: 'Webster-certified care to support pelvic balance and ease pregnancy discomfort.', href: '/services', img: '/images/prenatal-chiropractic-consultation.webp', alt: 'Chiropractor consulting with a pregnant patient' },
   { title: 'Postpartum Care', desc: 'Helping mothers recover from the physical changes of birth.', href: '/services', img: 'https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?w=800&fit=crop&q=80', alt: 'Mother holding baby close' },
-  { title: 'Family Adjustments', desc: 'Care for adults addressing headaches, neck and back pain, and everyday tension.', href: '/services', img: 'https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?w=800&fit=crop&q=80', alt: 'Father with child on shoulders' },
-  { title: 'Soft Tissue Therapies', desc: 'Dry Needling, RockBlades, cupping, and kinesiology taping.', href: '/services', img: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&fit=crop&q=80', alt: 'Modern bright clinic' },
-  { title: 'New Patient Visit', desc: 'A 40-minute first visit — consultation, exam, and a clear plan.', href: '/new-patients', img: 'https://images.unsplash.com/photo-1600618528240-fb9fc964b853?w=800&fit=crop&q=80', alt: 'Welcoming clinic entrance' },
+  { title: 'Family Adjustments', desc: 'Care for adults addressing headaches, neck and back pain, and everyday tension.', href: '/services', img: '/images/chiropractic-spinal-adjustment.webp', alt: 'Chiropractor performing a spinal adjustment on an adult patient' },
+  { title: 'Soft Tissue Therapies', desc: 'Dry Needling, RockBlades, cupping, and kinesiology taping.', href: '/services', img: '/images/dry-needling-therapy.webp', alt: 'Close-up of dry needling therapy with gloved hands placing needles' },
+  { title: 'New Patient Visit', desc: 'A 40-minute first visit — consultation, exam, and a clear plan.', href: '/new-patients', img: '/images/front-desk-patient-checkin.webp', alt: 'Patient being greeted at the front desk during check-in' },
 ];
 
 const concerns = [
-  { label: 'Pediatric', sub: 'Newborns through age 12', href: '/services', img: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&fit=crop&q=80', alt: 'Happy baby', shape: 'concern-shape-circle' },
-  { label: 'Pregnancy', sub: 'Webster-certified prenatal care', href: '/services', img: 'https://images.unsplash.com/photo-1493894473891-10fc1e5dbd22?w=600&fit=crop&q=80', alt: 'Pregnant woman in natural light', shape: 'concern-shape-leaf' },
+  { label: 'Pediatric', sub: 'Newborns through age 12', href: '/services', img: '/images/pediatric-chiropractic-adjustment.webp', alt: 'Chiropractor gently adjusting a baby', shape: 'concern-shape-circle' },
+  { label: 'Pregnancy', sub: 'Webster-certified prenatal care', href: '/services', img: '/images/prenatal-chiropractic-consultation.webp', alt: 'Chiropractor consulting with a pregnant patient', shape: 'concern-shape-leaf' },
   { label: 'Postpartum', sub: 'Recovery for new moms', href: '/services', img: 'https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?w=600&fit=crop&q=80', alt: 'Mother holding baby', shape: 'concern-shape-soft' },
-  { label: 'Adults & Family', sub: 'Headaches, back pain, daily tension', href: '/services', img: 'https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?w=600&fit=crop&q=80', alt: 'Family together outdoors', shape: 'concern-shape-asym' },
+  { label: 'Adults & Family', sub: 'Headaches, back pain, daily tension', href: '/services', img: '/images/chiropractic-spinal-adjustment.webp', alt: 'Chiropractor performing a spinal adjustment on an adult patient', shape: 'concern-shape-asym' },
 ];
 
 const faqItems = [
@@ -148,11 +148,11 @@ export default function Home() {
           <ScrollReveal variant="reveal-left" className="office-image-wrap">
             <div className="office-arch-img">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1200&fit=crop&q=80" alt="Modern chiropractic clinic treatment room" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src="/images/chiropractic-treatment-room.webp" alt="Maverick Chiropractic treatment room interior" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
             <ScrollReveal variant="reveal-scale" delay={2} className="office-inset-circle">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=600&fit=crop&q=80" alt="Bright modern office interior" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
+              <img src="/images/front-desk-patient-checkin.webp" alt="Patient being welcomed at the front desk" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
             </ScrollReveal>
           </ScrollReveal>
           <ScrollReveal variant="reveal-right" className="office-text-panel">

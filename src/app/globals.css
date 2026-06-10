@@ -580,7 +580,7 @@ ul, ol { list-style: none; }
    NEW PATIENTS PAGE: HERO (sub-page variant)
    ======================================================================== */
 .hero-sub-page { position: relative; min-height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; background: var(--color-slate); }
-.hero-sub-page .hero-bg { position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80') center/cover no-repeat; }
+.hero-sub-page .hero-bg { position: absolute; inset: 0; background: url('/images/chiropractic-treatment-room.webp') center/cover no-repeat; }
 .hero-sub-page .hero-overlay { position: absolute; inset: 0; background: var(--color-slate); opacity: 0.5; }
 .hero-sub-page .hero-content { position: relative; z-index: 2; max-width: 720px; padding: 120px var(--pad) 140px; }
 .hero-sub-page .eyebrow { color: var(--color-stone); margin-bottom: 32px; }

@@ -21,7 +21,7 @@ export default function ServicesPage() {
         eyebrow="Our Care"
         headline="The Menu"
         subtitle="Our philosophy is centered on root cause care — unhurried, educational, and personalized to your family."
-        backgroundImage="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1200&q=80"
+        backgroundImage="/images/chiropractic-treatment-room.webp"
       />
 
       {/* 1. Pediatric Chiropractic — image left, arch-topped */}
@@ -30,8 +30,8 @@ export default function ServicesPage() {
           <ScrollReveal variant="reveal-left" className="service-image">
             <div className="img-arch">
               <img
-                src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=1200&q=80"
-                alt="Baby smiling happily"
+                src="/images/pediatric-chiropractic-adjustment.webp"
+                alt="Chiropractor gently adjusting a baby"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
             </div>
@@ -74,8 +74,8 @@ export default function ServicesPage() {
           <ScrollReveal variant="reveal-right" className="service-image">
             <div className="img-leaf">
               <img
-                src="https://images.unsplash.com/photo-1493894473891-10fc1e5dbd22?w=1200&q=80"
-                alt="Pregnant woman during pregnancy"
+                src="/images/prenatal-chiropractic-consultation.webp"
+                alt="Chiropractor consulting with a pregnant patient during a prenatal visit"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
             </div>
@@ -162,8 +162,8 @@ export default function ServicesPage() {
           <ScrollReveal variant="reveal-right" className="service-image">
             <div className="img-arch">
               <img
-                src="https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?w=1200&q=80"
-                alt="Father carrying child on his shoulders outdoors"
+                src="/images/chiropractic-spinal-adjustment.webp"
+                alt="Chiropractor performing a spinal adjustment on an adult patient"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
             </div>
@@ -205,8 +205,8 @@ export default function ServicesPage() {
           <ScrollReveal variant="reveal-left" className="service-image">
             <div className="img-leaf">
               <img
-                src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80"
-                alt="Modern chiropractic clinic treatment room"
+                src="/images/front-desk-patient-checkin.webp"
+                alt="Patient being welcomed at the clinic front desk"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
             </div>
