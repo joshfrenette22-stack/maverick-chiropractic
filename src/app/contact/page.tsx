@@ -81,6 +81,7 @@ export default function ContactPage() {
                   Thu &middot; 8:30am&ndash;11:30am<br/>
                   Fri &middot; 9am&ndash;12pm
                 </p>
+                <p className="contact-note">Special appointment times may be available outside of regular office hours upon request.</p>
               </div>
             </ScrollReveal>
           </div>
@@ -122,6 +123,7 @@ export default function ContactPage() {
                       </div>
                     ))}
                   </div>
+                  <p style={{ fontSize: '12px', color: 'var(--color-stone)', marginTop: '12px', lineHeight: '1.6' }}>Special appointment times may be available outside of regular office hours upon request.</p>
                   <a href={siteInfo.directionsUrl} className="contact-directions-link">Get Directions</a>
                 </div>
               </div>

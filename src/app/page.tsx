@@ -5,6 +5,7 @@ import SectionDivider from '@/components/SectionDivider';
 import ClosingCTA from '@/components/ClosingCTA';
 import HomepageAccordion from '@/components/HomepageAccordion';
 import HeroSlider from '@/components/HeroSlider';
+import ServicesSlider from '@/components/ServicesSlider';
 import { siteInfo } from '@/lib/site-data';
 
 const services = [
@@ -106,28 +107,7 @@ export default function Home() {
             </ScrollReveal>
           </div>
         </div>
-        <div className="services-carousel">
-          {services.map((s, i) => (
-            <ScrollReveal key={s.title} variant="reveal" delay={Math.min(i, 4) as 0|1|2|3|4} className="service-card">
-              <Link href={s.href} className="service-card-link">
-                <div className="service-card-img">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={s.img} alt={s.alt} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 600ms' }} />
-                </div>
-                <div className="service-card-body">
-                  <h3>{s.title}</h3>
-                  <p className="service-desc">{s.desc}</p>
-                  <span className="explore-link">Explore</span>
-                </div>
-              </Link>
-            </ScrollReveal>
-          ))}
-        </div>
-        <div className="container" style={{ textAlign: 'center', marginTop: 48 }}>
-          <ScrollReveal variant="reveal">
-            <Link href="/services" className="btn btn-secondary">See All Services</Link>
-          </ScrollReveal>
-        </div>
+        <ServicesSlider services={services} />
       </section>
 
       {/* Divider: white → cream */}
@@ -209,7 +189,7 @@ export default function Home() {
           </ScrollReveal>
           <ScrollReveal variant="reveal" delay={1} className="founder-image">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/dr-courtney.png" alt="Dr. Courtney Schneider" style={{ width: '100%', height: '100%', objectFit: 'cover', minHeight: 400 }} />
+            <img src="/images/dr-courtney-new.webp" alt="Dr. Courtney Schneider" style={{ width: '100%', height: '100%', objectFit: 'cover', minHeight: 400 }} />
           </ScrollReveal>
         </div>
       </section>

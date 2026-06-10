@@ -3,10 +3,10 @@
 import { useState, useEffect } from 'react';
 
 const slides = [
-  'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1600&fit=crop&q=80',
-  'https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=1600&fit=crop&q=80',
-  'https://images.unsplash.com/photo-1540479859555-17af45c78602?w=1600&fit=crop&q=80',
-  'https://images.unsplash.com/photo-1609220136736-443140cffec6?w=1600&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=1600&fit=crop&q=80',
 ];
 
 export default function HeroSlider() {
