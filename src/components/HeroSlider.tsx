@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 const slides = [
   'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1600&fit=crop&q=80',
   'https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=1600&fit=crop&q=80',
-  'https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=1600&fit=crop&q=80',
+  'https://images.unsplash.com/photo-1540479859555-17af45c78602?w=1600&fit=crop&q=80',
   'https://images.unsplash.com/photo-1609220136736-443140cffec6?w=1600&fit=crop&q=80',
 ];
 

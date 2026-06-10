@@ -28,26 +28,19 @@ export default function SiteHeader() {
     <>
       <header className={headerClass} id="siteHeader">
         <div className="header-inner">
-          <nav className="nav-left">
-            {navLinks.slice(0, 2).map(link => (
-              <Link key={link.href} href={link.href} className={pathname === link.href ? 'active' : ''}>
-                {link.label}
-              </Link>
-            ))}
-          </nav>
           <Link href="/" className="logo">
             <span className="logo-mark">Maverick</span>
             <span className="logo-text">Chiropractic</span>
             <span className="logo-line"></span>
           </Link>
-          <div className="nav-right">
-            {navLinks.slice(2).map(link => (
+          <nav className="nav-links">
+            {navLinks.map(link => (
               <Link key={link.href} href={link.href} className={pathname === link.href ? 'active' : ''}>
                 {link.label}
               </Link>
             ))}
             <Link href={siteInfo.bookingUrl} className="btn btn-primary">Book Now</Link>
-          </div>
+          </nav>
           <button
             className={`menu-toggle${navOpen ? ' active' : ''}`}
             onClick={() => setNavOpen(!navOpen)}
