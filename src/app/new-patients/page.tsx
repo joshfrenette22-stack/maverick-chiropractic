@@ -31,7 +31,7 @@ export default function NewPatients() {
         eyebrow="New Patients"
         headline="Your first visit is a conversation."
         subtitle="No surprises. No pressure. Just thoughtful care, at your pace."
-        backgroundImage="/images/front-desk-patient-checkin.webp"
+        backgroundImage="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&fit=crop&q=80"
       />
 
       {/* What to Expect Intro */}
