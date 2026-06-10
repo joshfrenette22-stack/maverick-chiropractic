@@ -4,6 +4,7 @@ import SectionRule from '@/components/SectionRule';
 import SectionDivider from '@/components/SectionDivider';
 import ClosingCTA from '@/components/ClosingCTA';
 import HomepageAccordion from '@/components/HomepageAccordion';
+import HeroSlider from '@/components/HeroSlider';
 import { siteInfo } from '@/lib/site-data';
 
 const services = [
@@ -35,11 +36,11 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="hero">
-        <div className="hero-bg" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1600&fit=crop&q=80')" }} />
+        <HeroSlider />
         <div className="hero-overlay" />
         <div className="hero-content">
           <ScrollReveal as="p" variant="reveal" className="eyebrow">Gentle. Educational. Trust-Centered.</ScrollReveal>
-          <ScrollReveal as="h1" variant="reveal" delay={1}>Family chiropractic care, made personal.</ScrollReveal>
+          <ScrollReveal as="h1" variant="reveal" delay={1}>Family chiropractic care,<br />made personal.</ScrollReveal>
           <ScrollReveal as="p" variant="reveal" delay={2} className="hero-sub">
             Pediatric, prenatal, postpartum, and whole-family chiropractic care in Windsor, Colorado — where every visit is calm, conversational, and built around you.
           </ScrollReveal>
@@ -108,15 +109,17 @@ export default function Home() {
         <div className="services-carousel">
           {services.map((s, i) => (
             <ScrollReveal key={s.title} variant="reveal" delay={Math.min(i, 4) as 0|1|2|3|4} className="service-card">
-              <div className="service-card-img">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={s.img} alt={s.alt} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 600ms' }} />
-              </div>
-              <div className="service-card-body">
-                <h3>{s.title}</h3>
-                <p className="service-desc">{s.desc}</p>
-                <Link href={s.href} className="explore-link">Explore</Link>
-              </div>
+              <Link href={s.href} className="service-card-link">
+                <div className="service-card-img">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={s.img} alt={s.alt} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 600ms' }} />
+                </div>
+                <div className="service-card-body">
+                  <h3>{s.title}</h3>
+                  <p className="service-desc">{s.desc}</p>
+                  <span className="explore-link">Explore</span>
+                </div>
+              </Link>
             </ScrollReveal>
           ))}
         </div>
