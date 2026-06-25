@@ -1,6 +1,6 @@
 import { Resend } from 'resend';
 
-const TO_EMAIL = 'courtney@maverickchiropracticcare.com';
+const TO_EMAIL = ['courtney@maverickchiropracticcare.com', 'Josh@acutixmarketing.com'];
 const FROM_EMAIL = 'Maverick Chiropractic <no-reply@maverickchiropracticcare.com>';
 
 export async function POST(request: Request) {
